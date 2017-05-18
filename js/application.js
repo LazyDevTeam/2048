@@ -1,6 +1,7 @@
 // Wait till the browser is ready to render the game (avoids glitches)
+var eight=8;
 window.requestAnimationFrame(function () {
-  new GameManager(8, KeyboardInputManager, HTMLActuator, LocalStorageManager);
+  new GameManager(eight, KeyboardInputManager, HTMLActuator, LocalStorageManager);
 
   // TODO: This code is in need of a refactor (along with the rest)
   var storage     = new LocalStorageManager;
